@@ -1,0 +1,103 @@
+h1 {
+  text-align: center;
+  font-family: "Handlee", cursive;
+  font-size: 70px;
+  padding: 30px;
+  font-weight: bold;
+  color: #113f67;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #113f67;
+  background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+sup {
+  font-size: 15px;
+}
+
+.form {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.enter-city {
+  background-color: rgb(253, 249, 245);
+  border-radius: 10px;
+  border: 2px solid #113f67;
+  padding: 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.search {
+  background-color: #113f67;
+  color: rgb(253, 249, 245);
+  font-weight: 600;
+  border-radius: 10px;
+  border: 2px solid #113f67;
+  padding: 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.current {
+  background-color: #113f67;
+  color: rgb(253, 249, 245);
+  font-weight: 600;
+  border-radius: 10px;
+  border: 2px solid #113f67;
+  padding: 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.main-city {
+  font-size: 40px;
+  text-align: center;
+}
+.date-today {
+  font-size: 20px;
+  text-align: center;
+}
+.main-icon {
+  font-size: 40px;
+  text-align: center;
+  padding-left: 90px;
+}
+.temperature {
+  font-size: 28px;
+  text-align: center;
+  padding-left: 70px;
+}
+.description {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+.humidity {
+  font-size: 15px;
+  text-align: center;
+}
+.wind {
+  font-size: 15px;
+  text-align: center;
+}
+
+.forecast {
+  border: 1px solid #113f67;
+  margin: 6px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  margin-left: 12px;
+  text-align: center;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.fa-sun {
+  color: rgb(255, 208, 0);
+}
+.fa-cloud-rain {
+  color: #a2a8d3;
+}
+.celsius:hover {
+  cursor: pointer;
+  font-weight: 500;
+}
+.fahrenheit:hover {
+  cursor: pointer;
+  font-weight: 500;
+}
