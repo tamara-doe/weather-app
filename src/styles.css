@@ -7,15 +7,29 @@ h1 {
   color: #113f67;
 }
 body {
-  font-family: "Montserrat", sans-serif;
-  color: #113f67;
-  background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  -webkit-text-size-adjust: 100%;
+  background-image: url(pictures/rain.jpg);
 }
 sup {
   font-size: 15px;
 }
 footer {
   text-align: center;
+}
+div {
+  display: block;
+}
+
+.weather {
+  background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  border-radius: 16px;
+  box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
+  font-family: "Montserrat", sans-serif;
+  color: #113f67;
+}
+.app {
+  margin: 60px auto;
+  max-width: 800px;
 }
 
 .form {

@@ -25,88 +25,92 @@
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   </head>
   <body>
-    <div class="container">
-      <h1>Weather</h1>
-      <form class="form" id="search-form">
-        <input
-          type="text"
-          placeholder="Enter City"
-          size="35"
-          class="enter-city"
-          id="search-input"
-        />
-        <input type="submit" value="search" class="search" />
-        <input type="submit" value="current" class="current" />
-      </form>
-      <div class="row">
-        <div class="col-4">
-          <div class="main-city" id="city">Berlin</div>
-          <div class="date-today" id="date-now">Friday 30.09.22</div>
-        </div>
+    <div class="app">
+      <div class="container">
+        <div class="weather">
+          <h1>Weather</h1>
+          <form class="form" id="search-form">
+            <input
+              type="text"
+              placeholder="Enter City"
+              size="35"
+              class="enter-city"
+              id="search-input"
+            />
+            <input type="submit" value="search" class="search" />
+            <input type="submit" value="current" class="current" />
+          </form>
+          <div class="row">
+            <div class="col-4">
+              <div class="main-city" id="city">Berlin</div>
+              <div class="date-today" id="date-now">Friday 30.09.22</div>
+            </div>
 
-        <div class="col-4">
-          <i class="fa-regular fa-sun main-icon"> </i>
-          <br />
-          <strong id="temperature" class="temperature"> 20 </strong>
-          <sup>
-            <span class="celsius" id="celsius">°C</span> |
-            <span class="fahrenheit" id="fahrenheit">°F</span></sup
-          >
-        </div>
+            <div class="col-4">
+              <i class="fa-regular fa-sun main-icon"> </i>
+              <br />
+              <strong id="temperature" class="temperature"> 20 </strong>
+              <sup>
+                <span class="celsius" id="celsius">°C</span> |
+                <span class="fahrenheit" id="fahrenheit">°F</span></sup
+              >
+            </div>
 
-        <div class="col-4">
-          <div id="description" class="description">It's cloudy today</div>
-          <div id="humidity" class="humidity">with a Humidity 0%</div>
-          <div id="wind" class="wind">and Windspeed of 20 kmh/h</div>
-        </div>
+            <div class="col-4">
+              <div id="description" class="description">It's cloudy today</div>
+              <div id="humidity" class="humidity">with a Humidity 0%</div>
+              <div id="wind" class="wind">and Windspeed of 20 kmh/h</div>
+            </div>
 
-        <div class="col-2 forecast">
-          <i class="fa-regular fa-sun"></i>
-          <br />
-          <strong> 21° </strong> / 8° <br />
-          Saturday <br />
-          01.10.22
-        </div>
-        <div class="col-2 forecast">
-          <i class="fa-regular fa-sun"></i> <br />
-          <strong> 20° </strong> / 5° <br />
-          Sunday <br />
-          02.10.22
-        </div>
-        <div class="col-2 forecast">
-          <i class="fa-regular fa-sun"></i>
-          <br />
-          <strong> 18° </strong> / 7° <br />
-          Monday <br />
-          03.10.22
-        </div>
-        <div class="col-2 forecast">
-          <i class="fa-solid fa-cloud-rain"></i>
-          <br />
-          <strong> 17° </strong> / 2° <br />
-          Tuesday <br />
-          04.10.22
-        </div>
-        <div class="col-2 forecast">
-          <i class="fa-solid fa-cloud-rain"></i>
-          <br />
-          <strong> 13° </strong> / 0° <br />
-          Friday <br />
-          30.09.22
+            <div class="col-2 forecast">
+              <i class="fa-regular fa-sun"></i>
+              <br />
+              <strong> 21° </strong> / 8° <br />
+              Saturday <br />
+              01.10.22
+            </div>
+            <div class="col-2 forecast">
+              <i class="fa-regular fa-sun"></i> <br />
+              <strong> 20° </strong> / 5° <br />
+              Sunday <br />
+              02.10.22
+            </div>
+            <div class="col-2 forecast">
+              <i class="fa-regular fa-sun"></i>
+              <br />
+              <strong> 18° </strong> / 7° <br />
+              Monday <br />
+              03.10.22
+            </div>
+            <div class="col-2 forecast">
+              <i class="fa-solid fa-cloud-rain"></i>
+              <br />
+              <strong> 17° </strong> / 2° <br />
+              Tuesday <br />
+              04.10.22
+            </div>
+            <div class="col-2 forecast">
+              <i class="fa-solid fa-cloud-rain"></i>
+              <br />
+              <strong> 13° </strong> / 0° <br />
+              Friday <br />
+              30.09.22
+            </div>
+          </div>
+          <footer>
+            <p>
+              <a
+                href="https://github.com/tamara-doe/weather-app"
+                target="_blank"
+                class="gitHub-link"
+              >
+                open source code
+              </a>
+              by Tamara Dörflinger
+            </p>
+          </footer>
         </div>
       </div>
-      <footer>
-        <p>
-          <a
-            href="https://github.com/tamara-doe/weather-app"
-            target="_blank"
-            class="gitHub-link"
-          >
-            open source code
-          </a>
-          by Tamara Dörflinger
-        </p>
-      </footer>
     </div>
     <script src="src/index.js"></script>
   </body>
