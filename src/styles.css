@@ -104,3 +104,11 @@ footer {
   cursor: pointer;
   font-weight: 500;
 }
+.gitHub-link {
+  color: #113f67;
+  font-weight: 600;
+  text-decoration: none;
+}
+.gitHub-link:hover {
+  color: rgb(210, 179, 133);
+}
