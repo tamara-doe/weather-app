@@ -110,9 +110,15 @@ div {
 .fa-cloud-rain {
   color: #a2a8d3;
 }
+.celsius {
+  font-size: smaller;
+}
 .celsius:hover {
   cursor: pointer;
   font-weight: 500;
+}
+.fahrenheit {
+  font-size: smaller;
 }
 .fahrenheit:hover {
   cursor: pointer;
