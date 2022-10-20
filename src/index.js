@@ -9,9 +9,6 @@ function search(event) {
   axios.get(apiUrl).then(ShowTemperature);
 }
 
-let searchForm = document.querySelector("#search-form");
-searchForm.addEventListener("submit", search);
-
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
@@ -34,6 +31,8 @@ function formatDate(timestamp) {
   let day = days[date.getDay()];
   return `Last updated: ${day} ${hours} : ${minutes}`;
 }
+let searchForm = document.querySelector("#search-form");
+searchForm.addEventListener("submit", search);
 
 function ShowTemperature(response) {
   console.log(response.data);
@@ -42,18 +41,26 @@ function ShowTemperature(response) {
   let humidity = response.data.main.humidity;
   let wind = Math.round(response.data.wind.speed);
   let description = response.data.weather[0].description;
+  let icon = response.data.dt * 1000;
+
   let cityElement = document.querySelector("#city");
   let temperatureElement = document.querySelector("#temperature");
   let humidityElement = document.querySelector("#humidity");
   let descriptionElement = document.querySelector("#description");
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#dateNow");
+  let iconElement = document.querySelector("#icon");
+
   cityElement.innerHTML = city;
   temperatureElement.innerHTML = temperature;
   humidityElement.innerHTML = `with ${humidity} % humidity`;
   windElement.innerHTML = `and windspeed of ${wind} km/h`;
   descriptionElement.innerHTML = `${description} today`;
-  dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  dateElement.innerHTML = formatDate(icon);
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function showPosition(position) {
