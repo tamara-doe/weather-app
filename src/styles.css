@@ -85,6 +85,9 @@ div {
   font-size: 20px;
   text-align: center;
 }
+.description:first-letter {
+  text-transform: capitalize;
+}
 .humidity {
   font-size: 15px;
   text-align: center;

@@ -1,22 +1,5 @@
-//Date
-let now = new Date();
-let days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-let day = days[now.getDay()];
-let hours = now.getHours();
-let minutes = String(now.getMinutes()).padStart(2, "0");
+//Search API
 
-let dateNow = document.querySelector("#date-now");
-dateNow.innerHTML = `${day} ${hours}:${minutes}`;
-
-//Search
 function search(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-input");
@@ -29,7 +12,31 @@ function search(event) {
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", search);
 
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
+  let hours = date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[date.getDay()];
+  return `Last updated: ${day} ${hours} : ${minutes}`;
+}
+
 function ShowTemperature(response) {
+  console.log(response.data);
   let city = response.data.name;
   let temperature = Math.round(response.data.main.temp);
   let humidity = response.data.main.humidity;
@@ -40,11 +47,13 @@ function ShowTemperature(response) {
   let humidityElement = document.querySelector("#humidity");
   let descriptionElement = document.querySelector("#description");
   let windElement = document.querySelector("#wind");
+  let dateElement = document.querySelector("#dateNow");
   cityElement.innerHTML = city;
   temperatureElement.innerHTML = temperature;
   humidityElement.innerHTML = `with ${humidity} % humidity`;
   windElement.innerHTML = `and windspeed of ${wind} km/h`;
   descriptionElement.innerHTML = `${description} today`;
+  dateElement.innerHTML = formatDate(response.data.dt * 1000);
 }
 
 function showPosition(position) {
