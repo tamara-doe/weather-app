@@ -1,5 +1,3 @@
-//API
-
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
@@ -20,7 +18,7 @@ function formatDate(timestamp) {
     "Saturday",
   ];
   let day = days[date.getDay()];
-  return `Last updated: ${day} ${hours} : ${minutes}`;
+  return `Last updated: ${day} ${hours}:${minutes}`;
 }
 
 function ShowTemperature(response) {
