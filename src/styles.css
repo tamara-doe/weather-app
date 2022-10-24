@@ -127,6 +127,9 @@ div {
   cursor: pointer;
   font-weight: 500;
 }
+.active {
+  font-weight: bolder;
+}
 .gitHub-link {
   color: #113f67;
   font-weight: 600;
