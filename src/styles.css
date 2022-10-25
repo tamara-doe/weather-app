@@ -97,21 +97,15 @@ div {
   text-align: center;
 }
 
-.forecast {
-  border: 1px solid #113f67;
-  margin: 6px;
-  margin-top: 40px;
-  margin-bottom: 50px;
-  margin-left: 12px;
-  text-align: center;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+.forecast-days {
 }
-.fa-sun {
-  color: rgb(255, 208, 0);
+.forecast-date {
 }
-.fa-cloud-rain {
-  color: #a2a8d3;
+
+.forecast-temperature-max {
+}
+.forecast-temperature-min {
+  opacity: 0.7;
 }
 .celsius {
   font-size: smaller;
