@@ -100,27 +100,12 @@ div {
 .forecast {
   text-align: center;
 }
-.forecast-date {
-}
 
-.forecast-temperature-max {
-}
 .forecast-temperature-min {
   opacity: 0.7;
 }
 .celsius {
   font-size: smaller;
-}
-.celsius:hover {
-  cursor: pointer;
-  font-weight: 500;
-}
-.fahrenheit {
-  font-size: smaller;
-}
-.fahrenheit:hover {
-  cursor: pointer;
-  font-weight: 500;
 }
 .active {
   font-weight: bolder;
