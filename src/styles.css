@@ -7,14 +7,16 @@ h1 {
   color: #113f67;
 }
 body {
-  -webkit-text-size-adjust: 100%;
-  background-image: url(pictures/rain.jpg);
+  background-color: #113f67;
 }
 sup {
   font-size: 15px;
 }
 footer {
+  font-size: 12px;
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 4px;
 }
 div {
   display: block;
@@ -26,7 +28,7 @@ div {
   box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
   font-family: "Montserrat", sans-serif;
   color: #113f67;
-  max-width: 800px;
+  max-width: 580px;
   margin: 0 auto;
 }
 .app {
@@ -65,25 +67,26 @@ div {
 .main-city {
   font-size: 40px;
   text-align: center;
+  padding-left: 30px;
 }
 .date-today {
   font-size: 15px;
   text-align: center;
+  padding-left: 30px;
 }
 .main-image {
   font-size: 40px;
   text-align: center;
-  padding-left: 70px;
 }
 .temperature {
   font-size: 28px;
   text-align: center;
-  padding-left: 70px;
 }
 .description {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 20px;
   text-align: center;
+  padding-right: 30px;
 }
 .description:first-letter {
   text-transform: capitalize;
@@ -91,14 +94,28 @@ div {
 .humidity {
   font-size: 15px;
   text-align: center;
+  padding-right: 30px;
 }
 .wind {
   font-size: 15px;
   text-align: center;
+  padding-right: 30px;
 }
 
 .forecast {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.forecast-element {
+  border: 1px solid #113f67;
+  margin-top: 30px;
+  margin-left: 10px;
   text-align: center;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 90px;
 }
 
 .forecast-temperature-min {
@@ -107,9 +124,7 @@ div {
 .celsius {
   font-size: smaller;
 }
-.active {
-  font-weight: bolder;
-}
+
 .gitHub-link {
   color: #113f67;
   font-weight: 600;
@@ -117,4 +132,10 @@ div {
 }
 .gitHub-link:hover {
   color: rgb(210, 179, 133);
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

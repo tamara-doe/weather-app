@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="src/styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   </head>
+
   <body>
     <div class="app">
       <div class="container">
@@ -36,27 +37,25 @@
             <input type="submit" value="search" class="search" />
             <input type="submit" value="current" class="current" />
           </form>
+
           <div class="row">
             <div class="col-4">
               <div class="main-city" id="city"></div>
               <div class="date-today" id="dateNow"></div>
             </div>
 
-            <div class="col-4">
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt="cloudy"
-                id="icon"
-                class="main-image"
-              />
-              <br />
-              <strong id="temperature" class="temperature"> 20 </strong>
-              <sup> <span class="celsius active" id="celsius">°C</span> </sup>
+            <div class="col-4 image-container">
+              <img src="" alt="cloudy" id="icon" class="main-image" />
+              <span id="temperature" class="temperature"> 20 </span>
+              <sup>
+                <span class="celsius" id="celsius">°C</span>
+              </sup>
             </div>
+
             <div class="col-4">
-              <div id="description" class="description">It's cloudy today</div>
-              <div id="humidity" class="humidity">with a Humidity 0%</div>
-              <div id="wind" class="wind">and Windspeed of 20 kmh/h</div>
+              <div id="description" class="description"></div>
+              <div id="humidity" class="humidity"></div>
+              <div id="wind" class="wind"></div>
             </div>
 
             <div class="forecast" id="forecast"></div>
